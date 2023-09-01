@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+/*Body and header styling */
+
+body {
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    padding: 0;
+    background-image: url(./background-img.png);
+    background-position: 30%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    width: 1000px;
+    min-height: 100vh;
+    background-color: #E8E3CC;
+    box-shadow: 2px 1px 5px 11px rgba(0, 0, 0, 0.31);
+    font-size: 1.2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+    background-color: #3A6A59;
+    color: white;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.header ul li {
+    list-style: none;
+}
+
+/*Menu page styling*/
+
+.main,
+.menu, 
+.contact{
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.our-building{
+    width: 600px;
+    height: 400px;
+    background-image: url(./building.png);
+    background-size: cover;
+    background-position: 30%;
+    background-repeat: no-repeat;
+}
+
+.our-restaurant,
+.open-img-container,
+.location,
+.food-container,
+.employee-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 3rem;
+}
+
+.opening-hours{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title,
+.food-title {
+    font-size: 1.5rem;
+}
+
+/* menu page style*/
+
+.food-pics{
+    background-position: center;
+}
+
+.food-pics,
+.employee-img {
+    width: 400px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gulash {
+    background-image: url(./gulash.png);
+}
+
+.langos {
+    background-image: url(./langos.png);
+}
+
+.paprikash {
+    background-image: url(./paprikash.png);
+}
+
+.fish-soup {
+    background-image: url(./fish-soup.png);
+}
+
+.lecso {
+    background-image: url(./lecso.png);
+}
+
+/*employee page styling */
+
+.huba{
+    background-image: url(./huba.png);
+}
+.kriszti{
+    background-image: url(./kriszti.png);
+}
+.gabi{
+    background-image: url(./gabi.png);
+}
+.danika{
+    background-image: url(./danika.png);
+}
+.boti{
+    background-image: url(./boti.png);
+}
