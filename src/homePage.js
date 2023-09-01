@@ -8,18 +8,29 @@ export default function homePage(){
     ourRestaurant.className = ('our-restaurant');
     const ourRestTitle = document.createElement('div');
     ourRestTitle.innerText = 'About us';
+    ourRestTitle.classList.add('title');
     const description = document.createElement('div');
     description.innerText = 'In Hungary we really like the fatty, yummy, spicy foods. Think about the langos, gulash, fish soup, paprikash. We make our food from traditional recipies and with fresh ingredients, with love. This is why we have so many chubby people in Hungary. Theese guys cant be wrong. If you wan to make your one of the best decision ever, lets try us!';
+
+    const ourBuilding = document.createElement('div');
+    ourBuilding.classList.add('our-building');
+
     ourRestaurant.append(ourRestTitle, description);
+
     
     //OPENING HOURS
     const openingHours = document.createElement('div');
     openingHours.className = ('opening-hours');
     const openingTitle = document.createElement('div');
     openingTitle.innerText = 'Opening hours';
+    openingTitle.classList.add('title');
+    const imgOpenContainer = document.createElement('div');
+    imgOpenContainer.classList.add('open-img-container');
     const openingHoursContainer = document.createElement('div');
-    openingHours.classList.add('opening-container');
-    openingHours.append(openingTitle, openingHoursContainer);
+    openingHoursContainer.classList.add('opening-container');
+
+    imgOpenContainer.append(openingTitle, openingHoursContainer)
+    openingHours.append(ourBuilding, imgOpenContainer);
 
     const opening = {
         Monday: '11-22',
@@ -39,6 +50,7 @@ export default function homePage(){
     const location = document.createElement('div');
     const locationTitle = document.createElement('div');
     locationTitle.innerText = 'Location';
+    locationTitle.classList.add('title');
     const locationText = document.createElement('div');
     locationText.innerText = '14050 W Andrew Johnson Hwy'
     location.append(locationTitle, locationText)
