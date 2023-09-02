@@ -10,7 +10,7 @@ export default function homePage(){
     ourRestTitle.innerText = 'About us';
     ourRestTitle.classList.add('title');
     const description = document.createElement('div');
-    description.innerText = 'In Hungary we really like the fatty, yummy, spicy foods. Think about the langos, gulash, fish soup, paprikash. We make our food from traditional recipies and with fresh ingredients, with love. This is why we have so many chubby people in Hungary. Theese guys cant be wrong. If you wan to make your one of the best decision ever, lets try us!';
+    description.innerText = `In Hungary we really like the fatty, yummy, spicy foods. Think about the langos, gulash, fish soup, paprikash. We make our food from traditional recipies and with fresh ingredients, with love. This is why we have so many chubby people in Hungary. Theese guys can't be wrong. If you want to make  one of your best decisions ever, let's try us!`;
 
     const ourBuilding = document.createElement('div');
     ourBuilding.classList.add('our-building');
