@@ -53,8 +53,8 @@ body {
 /*Menu page styling*/
 
 .main,
-.menu, 
-.contact{
+.menu,
+.contact {
     padding: 2rem 0;
     display: flex;
     flex-direction: column;
@@ -62,7 +62,7 @@ body {
     gap: 4rem;
 }
 
-.our-building{
+.our-building {
     width: 600px;
     height: 400px;
     background-image: url(./building.png);
@@ -83,7 +83,7 @@ body {
     margin: 0 3rem;
 }
 
-.opening-hours{
+.opening-hours {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,7 +96,7 @@ body {
 
 /* menu page style*/
 
-.food-pics{
+.food-pics {
     background-position: center;
 }
 
@@ -130,18 +130,67 @@ body {
 
 /*employee page styling */
 
-.huba{
+.huba {
     background-image: url(./huba.png);
 }
-.kriszti{
+
+.kriszti {
     background-image: url(./kriszti.png);
 }
-.gabi{
+
+.gabi {
     background-image: url(./gabi.png);
 }
-.danika{
+
+.danika {
     background-image: url(./danika.png);
 }
-.boti{
+
+.boti {
     background-image: url(./boti.png);
+}
+
+
+/*Responsive */
+
+@media screen and (max-width: 1000px) {
+    #content {
+        width: 600px;
+    }
+
+    .header-title {
+        display: none;
+    }
+
+    .opening-hours {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .our-building {
+        width: 400px;
+        height: 300px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #content {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #content {
+        width: 100vw;
+    }
+    .our-building,
+    .food-pics,
+    .employee-img{
+        width: 350px;
+        height: 250px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }

@@ -18,6 +18,7 @@ export default function loadHeader() {
     const header = document.createElement('div');
     header.classList.add('header');
     const headerTitle = document.createElement('div');
+    headerTitle.classList.add('header-title')
     headerTitle.innerHTML = 'Keep It Hungarian';
     const headerUl = document.createElement('ul');
     const homeLi = document.createElement('li');
