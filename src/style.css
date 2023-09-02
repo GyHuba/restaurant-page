@@ -7,8 +7,9 @@ body {
     margin: 0;
     padding: 0;
     background-image: url(./background-img.png);
-    background-position: 30%;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,6 +47,7 @@ body {
 
 .header ul li {
     list-style: none;
+    cursor: pointer;
 }
 
 /*Menu page styling*/
